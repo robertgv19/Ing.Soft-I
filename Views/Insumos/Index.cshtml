@@ -1,0 +1,58 @@
+@{
+    ViewData["Title"] = "Insumos";
+}
+<div class="row">
+    <div class="col-md-4">
+
+        <h1 class="display-4">Insumos</h1><br>
+
+        <form  asp-controller="Insumos" asp-action="Registrar">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group text-left">
+                <label for="Codigo" class="control-label">Codigo</label>
+                <input for="Codigo" class="form-control"> 
+                <span validation-for="codigo" class="text-danger"></span>
+            </div><br>
+
+            <div class="form-group text-left">
+                <label for="nombre" class="control-label">Nombre</label>
+                <input for="nombre" class="form-control"> 
+                <span validation-for="nombre" class="text-danger"></span>
+            </div><br>
+
+            <div class="form-group text-left">
+                <label for="cantidad" class="control-label">Cantidad</label>
+                <input for="cantidad" class="form-control"> 
+                <span validation-for="cantidad" class="text-danger"></span>
+            </div><br>
+
+            <div class="form-group text-left">
+                <label for="telefono" class="control-label">telefono</label>
+                <input for="telefono" class="form-control"> 
+                <span validation-for="telefono" class="text-danger"></span>
+            </div><br>
+            
+            <div class="form-group text-left">
+                <label for="tipo" class="control-label">Tipo</label>
+                <input for="tipo" class="form-control"> 
+                <span validation-for="tipo" class="text-danger"></span>
+            </div><br>
+
+            <div class="form-group text-left">
+                <label for="fecha" class="control-label">Fecha</label>
+                <input for="fecha" class="form-control"> 
+                <span validation-for="fecha" class="text-danger"></span>
+            </div><br>
+
+            <div class="form-group text-left">
+                <label for="stock" class="control-label">Stock</label>
+                <input for="stock" class="form-control"> 
+                <span validation-for="stock" class="text-danger"></span>
+            </div><br>
+            <div class="form-group">
+                <button class="btn btn-primary">Enviar</button>
+            </div><br>
+        </form>
+    </div>
+</div>
