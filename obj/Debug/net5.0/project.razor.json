@@ -15676,6 +15676,11 @@
       "FilePath": "c:\\Users\\PC\\Desktop\\Proyecto software\\Ing.Soft-I\\Views\\Venta\\Listado_Venta.cshtml",
       "TargetPath": "Views\\Venta\\Listado_Venta.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\PC\\Desktop\\Proyecto software\\Ing.Soft-I\\Views\\Venta\\Editar_Venta.cshtml",
+      "TargetPath": "Views\\Venta\\Editar_Venta.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"

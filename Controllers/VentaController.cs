@@ -50,8 +50,8 @@ namespace Ing.soft_I.Controllers
                 return RedirectToAction("index","Home");
         }
          [HttpPost]
-        public IActionResult Editar(String idventa){
-                 var entity = _context.venta.FirstOrDefault(item => item.idventa == idventa);
+        public IActionResult Editar_venta(String id){
+                 var entity = _context.venta.FirstOrDefault(item => item.idventa == id);
                  return View(entity);             
         }
         [HttpPost]
@@ -65,6 +65,15 @@ namespace Ing.soft_I.Controllers
                 _context.venta.Update(ventam);
                 _context.SaveChanges();
                  return View();             
+        }
+         public IActionResult Listado_Venta()
+        {
+            var ventas=_context.venta.ToList();
+            return View(ventas);
+        }
+        public IActionResult Venta_Queso()
+        {
+            return View();
         }
     }
 }

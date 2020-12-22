@@ -61,7 +61,6 @@ C:\Users\PC\Desktop\Proyecto software\Ing.Soft-I\obj\Debug\net5.0\Ing.soft-I.Tag
 C:\Users\PC\Desktop\Proyecto software\Ing.Soft-I\obj\Debug\net5.0\Ing.soft-I.RazorCoreGenerate.cache
 C:\Users\PC\Desktop\Proyecto software\Ing.Soft-I\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 C:\Users\PC\Desktop\Proyecto software\Ing.Soft-I\obj\Debug\net5.0\Razor\Views\Cliente\Cliente.cshtml.g.cs
-C:\Users\PC\Desktop\Proyecto software\Ing.Soft-I\obj\Debug\net5.0\Razor\Views\Cliente\Confirmación.cshtml.g.cs
 C:\Users\PC\Desktop\Proyecto software\Ing.Soft-I\obj\Debug\net5.0\Razor\Views\Cliente\Editar.cshtml.g.cs
 C:\Users\PC\Desktop\Proyecto software\Ing.Soft-I\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\PC\Desktop\Proyecto software\Ing.Soft-I\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
@@ -78,6 +77,9 @@ C:\Users\PC\Desktop\Proyecto software\Ing.Soft-I\obj\Debug\net5.0\Ing.soft-I.dll
 C:\Users\PC\Desktop\Proyecto software\Ing.Soft-I\obj\Debug\net5.0\ref\Ing.soft-I.dll
 C:\Users\PC\Desktop\Proyecto software\Ing.Soft-I\obj\Debug\net5.0\Ing.soft-I.pdb
 C:\Users\PC\Desktop\Proyecto software\Ing.Soft-I\obj\Debug\net5.0\Ing.soft-I.genruntimeconfig.cache
-C:\Users\PC\Desktop\Proyecto software\Ing.Soft-I\obj\Debug\net5.0\Razor\Views\Insumos\Compra_Insumos.cshtml.g.cs
 C:\Users\PC\Desktop\Proyecto software\Ing.Soft-I\obj\Debug\net5.0\Razor\Views\Insumos\Stock_insumos.cshtml.g.cs
 C:\Users\PC\Desktop\Proyecto software\Ing.Soft-I\obj\Debug\net5.0\Razor\Views\Venta\Venta_Queso.cshtml.g.cs
+C:\Users\PC\Desktop\Proyecto software\Ing.Soft-I\obj\Debug\net5.0\Razor\Views\Insumos\Modificar_insumo.cshtml.g.cs
+C:\Users\PC\Desktop\Proyecto software\Ing.Soft-I\obj\Debug\net5.0\Razor\Views\Insumos\Nuevo_insumo.cshtml.g.cs
+C:\Users\PC\Desktop\Proyecto software\Ing.Soft-I\obj\Debug\net5.0\Razor\Views\Venta\Listado_Venta.cshtml.g.cs
+C:\Users\PC\Desktop\Proyecto software\Ing.Soft-I\obj\Debug\net5.0\Razor\Views\Venta\Editar_Venta.cshtml.g.cs

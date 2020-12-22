@@ -1,0 +1,32 @@
+@model Ing.soft_I.Models.insumo
+
+<div class="row">
+    <div class="col-md-4">
+
+
+       <form asp-controller="Insumos" asp-action="Editarr">
+
+           <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">id_Insumo</label>
+    <input asp-for="idinsumo" value="@Model.idinsumo" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="true">
+  </div>
+
+      <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Nombre de Insumo</label>
+    <input asp-for="nominsumo" value="@Model.nominsumo" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="true">
+  </div>
+
+    <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Descripcion de Insumo</label>
+    <input asp-for="descinsumo" value="@Model.descinsumo" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="true">
+  </div>
+
+    <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Cantidad de Insumo</label>
+    <input asp-for="cantinsumo" value="@Model.cantinsumo" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="true">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Modificar Insumo</button>
+  </form>
+    </div>
+</div>

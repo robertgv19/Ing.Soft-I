@@ -1,0 +1,34 @@
+@model Ing.soft_I.Models.venta
+
+<div class="row">
+    <div class="col-md-4">
+
+       <form asp-controller="VENTA" asp-action="Venta">
+      <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">id_Venta</label>
+    <input asp-for="idventa" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="true">
+  </div>
+
+    <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Fecha de Venta</label>
+    <input asp-for="fechaventa" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="true">
+  </div>
+
+    <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Descripcion de Venta</label>
+    <input asp-for="descventa" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="true">
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Precio de Venta</label>
+    <input asp-for="precio" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="true">
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Documento de Cliente</label>
+    <input asp-for="cliente_documento" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="true">
+  </div>
+  <button type="submit" class="btn btn-primary">Crear Venta</button>
+  </form>
+    </div>
+</div>

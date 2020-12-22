@@ -13,12 +13,12 @@ using Microsoft.AspNetCore.Identity;
 
 namespace Ing.soft_I.Controllers
 {
-    public class InsumoController : Controller
+    public class InsumosController : Controller
     {
-        private readonly ILogger<InsumoController> _logger;
+        private readonly ILogger<InsumosController> _logger;
         private readonly ApplicationDbContext _context;
      
-        public InsumoController(ILogger<InsumoController> logger, ApplicationDbContext context)
+        public InsumosController(ILogger<InsumosController> logger, ApplicationDbContext context)
         {
             _logger = logger; 
             _context = context;           
@@ -50,10 +50,9 @@ namespace Ing.soft_I.Controllers
                 _context.SaveChanges();
                 return RedirectToAction("index","Home");
         }
-         [HttpPost]
-        public IActionResult Editar(String idinsumo){
-                 var entity = _context.insumo.FirstOrDefault(item => item.idinsumo == idinsumo);
-                 return View(entity);             
+        public IActionResult Modificar_insumo(String id){
+                 var entity = _context.insumo.FirstOrDefault(item => item.idinsumo == id);
+                 return View(entity);            
         }
         [HttpPost]
         public IActionResult Editarr(insumo insumo){
@@ -72,5 +71,10 @@ namespace Ing.soft_I.Controllers
             var insumos=_context.insumo.ToList();
             return View(insumos);
         }
+        public IActionResult Nuevo_insumo()
+        {
+            return View();
+        }
+       
     }
 }

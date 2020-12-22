@@ -1,0 +1,54 @@
+@using Ing.soft_I.Models;
+@model List<venta>
+
+    
+    <H1>Ventas Realizadas</H1>
+   
+        <div class="row">
+                        <div class="col-9">
+                            <table class="table table-dark table-striped">
+                            <thead>
+                               <tr>
+                                 <th scope="col">id_venta</th>
+                                 <th scope="col">fecha de venta</th>
+                                 <th scope="col">descripcion de venta</th>
+                                 <th scope="col">precio de venta</th>
+                                 <th scope="col">documento de cliente</th>
+                               </tr>
+                            </thead>
+
+                            @foreach (var ventas in Model){
+                             
+                            <tr>
+                                <td>@ventas.idventa</td>
+                                <td>@ventas.fechaventa</td>
+                                <td>@ventas.descventa</td>
+                                <td>@ventas.precio</td>
+                                <td>@ventas.cliente_documento</td> 
+                            </tr>
+                            }
+
+                            </table>
+                        </div>
+
+                        <div class="col-3">
+                    
+                                <a class="nav-link text-dark" asp-controller="Venta" asp-action="Venta_Queso">
+                                    <button type="submit" class="btn btn-primary">Agregar insumos
+                                    </button>
+                                </a><br>
+
+                                <a class="nav-link text-dark" asp-controller="" asp-action="">
+                                    <button type="submit" class="btn btn-primary">Registrar entrada/salida
+                                    </button>
+                                </a><br>
+
+                            <form asp-controller="Venta" asp-action="Editar_venta">
+                            <input name="id" type="text" class="form-control" placeholder="Modificar producto"><br><br>
+
+                            <button type="submit" class="btn btn-primary">       Modificar        </button><br>
+                            </form>
+                        </div>  
+           
+
+        </div>

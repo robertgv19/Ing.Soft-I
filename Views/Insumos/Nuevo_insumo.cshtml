@@ -1,0 +1,29 @@
+@model Ing.soft_I.Models.insumo
+
+<div class="row">
+    <div class="col-md-4">
+
+       <form asp-controller="Insumos" asp-action="Insumo">
+      <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">id_Insumo</label>
+    <input asp-for="idinsumo" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="true">
+  </div>
+
+    <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Nombre de Insumo</label>
+    <input asp-for="nominsumo" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="true">
+  </div>
+
+    <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Descripcion Insumo</label>
+    <input asp-for="descinsumo" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="true">
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Cantidad de insumo</label>
+    <input asp-for="cantinsumo" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="true">
+  </div>
+  <button type="submit" class="btn btn-primary">Crear Insumo</button>
+  </form>
+    </div>
+</div>
