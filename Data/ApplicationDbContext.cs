@@ -4,6 +4,7 @@ using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace Ing.soft_I.Data
 {
     public class ApplicationDbContext : IdentityDbContext
@@ -12,5 +13,8 @@ namespace Ing.soft_I.Data
             : base(options)
         {
         }
+        public DbSet<Ing.soft_I.Models.cliente> cliente { get; set; }
+        public DbSet<Ing.soft_I.Models.venta> venta { get; set; }
+        public DbSet<Ing.soft_I.Models.insumo> insumo { get; set; }
     }
 }

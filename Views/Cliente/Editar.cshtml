@@ -1,44 +1,39 @@
+@model Ing.soft_I.Models.cliente
+
 <div class="row">
     <div class="col-md-4">
 
-        <h1 class="display-4">Editar datos</h1><br>
+       <form asp-controller="Cliente" asp-action="Editar">
+      <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Documento</label>
+    <input name="documento" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="true">
+    </div>
+  <button type="submit" class="btn btn-primary">Buscar Cliente</button>
+  </form>
 
-        <form  asp-controller="Cliente" asp-action="Editar">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+       <form asp-controller="Cliente" asp-action="Editarr">
 
-            <div class="form-group text-left">
-                <label for="razonsocial" class="control-label"></label>
-                <input for="razonsocial" class="form-control"> 
-                <span validation-for="razonsocial" class="text-danger"></span>
-            </div><br>
+           <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Documento</label>
+    <input asp-for="documento" value="@Model.documento" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="true">
+  </div>
 
-            <div class="form-group text-left">
-                <label for="dni" class="control-label"></label>
-                <input for="dni" class="form-control"> 
-                <span validation-for="dni" class="text-danger"></span>
-            </div><br>
+      <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Nombre</label>
+    <input asp-for="nombre" value="@Model.nombre" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="true">
+  </div>
 
-            <div class="form-group text-left">
-                <label for="direccion" class="control-label"></label>
-                <input for="direccion" class="form-control"> 
-                <span validation-for="direccion" class="text-danger"></span>
-            </div><br>
+    <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Apellido paterno</label>
+    <input asp-for="apepaterno" value="@Model.apepaterno" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="true">
+  </div>
 
-            <div class="form-group text-left">
-                <label for="telefono" class="control-label"></label>
-                <input for="telefono" class="form-control"> 
-                <span validation-for="telefono" class="text-danger"></span>
-            </div><br>
-            
-            <div class="form-group text-left">
-                <label for="correo" class="control-label"></label>
-                <input for="correo" class="form-control"> 
-                <span validation-for="correo" class="text-danger"></span>
-            </div><br>
+    <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Apellido materno</label>
+    <input asp-for="apematerno" value="@Model.apematerno" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="true">
+  </div>
 
-            <div class="form-group">
-                <button class="btn btn-primary">Actualizar</button>
-            </div><br>
-        </form>
+  <button type="submit" class="btn btn-primary">Modificar Cliente</button>
+  </form>
     </div>
 </div>

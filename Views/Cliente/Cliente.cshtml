@@ -1,0 +1,29 @@
+@model Ing.soft_I.Models.cliente
+
+<div class="row">
+    <div class="col-md-4">
+
+       <form asp-controller="Cliente" asp-action="Cliente">
+      <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Documento</label>
+    <input asp-for="documento" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="true">
+  </div>
+
+    <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Nombre</label>
+    <input asp-for="nombre" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="true">
+  </div>
+
+    <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Apellido paterno</label>
+    <input asp-for="apepaterno" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="true">
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Apellido materno</label>
+    <input asp-for="apematerno" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="true">
+  </div>
+  <button type="submit" class="btn btn-primary">Crear Cliente</button>
+  </form>
+    </div>
+</div>
